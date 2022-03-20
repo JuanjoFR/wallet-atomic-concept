@@ -1240,6 +1240,15 @@
   "resolved" "https://registry.npmjs.org/@react-native/polyfills/-/polyfills-2.0.0.tgz"
   "version" "2.0.0"
 
+"@react-navigation/bottom-tabs@^6.2.0":
+  "integrity" "sha512-MNwXbybjapRFZJtO+fNu5YuTYQGzzYAUIF4IsY2+ZBXoCRpzuDq8gXV7ChKDJaaTeX39IoDUng3qGXbvtVcivA=="
+  "resolved" "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.2.0.tgz"
+  "version" "6.2.0"
+  dependencies:
+    "@react-navigation/elements" "^1.3.1"
+    "color" "^3.1.3"
+    "warn-once" "^0.1.0"
+
 "@react-navigation/core@^6.1.1":
   "integrity" "sha512-njysuiqztgvR1Z9Noxk2OGJfYtFGFDRyji5Vmm1jHzlql0m+q0wh1dUiyaIEtTyrhFXr/YNgdrKuiPaU9Jp8OA=="
   "resolved" "https://registry.npmjs.org/@react-navigation/core/-/core-6.1.1.tgz"
@@ -1281,6 +1290,11 @@
     "@react-navigation/elements" "^1.3.1"
     "color" "^3.1.3"
     "warn-once" "^0.1.0"
+
+"@shopify/restyle@^2.0.0":
+  "integrity" "sha512-MkmHQ1K6zOgY2eww4W4rZr755RR1ImGtgEpMDF/BInjn2Z6e5zJuAHg53Oc5A1P3PqXP4I1raghJdzq0hgXrAw=="
+  "resolved" "https://registry.npmjs.org/@shopify/restyle/-/restyle-2.0.0.tgz"
+  "version" "2.0.0"
 
 "@sideway/address@^4.1.3":
   "integrity" "sha512-8ncEUtmnTsMmL7z1YPB47kPUq7LpKWJNFPsRzHiIajGC5uXlWGn+AmkYPcHNl8S4tcEGx+cnORnNYaw2wvL+LQ=="
@@ -5780,7 +5794,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@0.67.4":
+"react-native@*", "react-native@>=0.59.0", "react-native@0.67.4":
   "integrity" "sha512-NA9d9lNJu9TViEJu2uZxWXUP+QNUilGGA5tdMbVFedNroOH1lnQ3n/FAVoGK1gqGarCgNTtheBxUpEa979Cu8w=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.67.4.tgz"
   "version" "0.67.4"
@@ -5839,7 +5853,7 @@
     "react-shallow-renderer" "^16.13.1"
     "scheduler" "^0.20.2"
 
-"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.0", "react@17.0.2":
+"react@*", "react@^16.0.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^17.0.0", "react@>=16.8.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

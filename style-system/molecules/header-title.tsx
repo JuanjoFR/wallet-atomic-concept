@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
   pressable: {
     flex: 1
   },
+  container: { marginVertical: 4 },
   text: { flexShrink: 1 }
 });
 
@@ -18,35 +19,34 @@ function HeaderLeft({ value, onPress }: Props) {
   const theme = useTheme();
 
   return (
-    <Box
-      flex={1}
-      height={44}
-      marginHorizontal="m"
-      paddingHorizontal="m"
-      borderColor="headerButtonBackground"
-      borderWidth={2}
-      borderRadius={8}>
-      <Pressable onPress={onPress} style={styles.pressable}>
-        <Box
-          flex={1}
-          flexDirection="row"
-          alignItems="center"
-          justifyContent="space-between">
-          <Text
-            numberOfLines={1}
-            variant="body"
-            marginRight="s"
-            style={styles.text}>
-            {value}
-          </Text>
-          <Icon
-            name="chevron-down-outline"
-            size={20}
-            color={theme.colors.headerTitleChevron}
-          />
-        </Box>
-      </Pressable>
-    </Box>
+    <Pressable
+      onPress={onPress}
+      style={[styles.pressable, { marginHorizontal: theme.spacing.m }]}>
+      <Box
+        flex={1}
+        height={40}
+        paddingHorizontal="s"
+        borderColor="headerButtonBackground"
+        borderWidth={2}
+        borderRadius={8}
+        flexDirection="row"
+        alignItems="center"
+        justifyContent="space-between"
+        style={styles.container}>
+        <Text
+          numberOfLines={1}
+          variant="body"
+          marginRight="s"
+          style={styles.text}>
+          {value}
+        </Text>
+        <Icon
+          name="chevron-down-outline"
+          size={20}
+          color={theme.colors.headerTitleChevron}
+        />
+      </Box>
+    </Pressable>
   );
 }
 

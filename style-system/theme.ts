@@ -77,7 +77,7 @@ const theme = createTheme({
   textVariants: {
     body: {
       fontFamily: "System",
-      fontWeight: "normal",
+      fontWeight: "600",
       fontSize: 16,
       lineHeight: 24,
       color: "text"

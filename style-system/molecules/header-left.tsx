@@ -12,7 +12,7 @@ function HeaderLeft({ onPress }: { onPress: () => void }) {
       <Box width={44} height={44} alignItems="center" justifyContent="center">
         <Icon
           name="menu-outline"
-          size={25}
+          size={34}
           color={theme.colors.headerButtonForeground}
         />
       </Box>

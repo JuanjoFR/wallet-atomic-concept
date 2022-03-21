@@ -1,8 +1,12 @@
 import { useTheme } from "@shopify/restyle";
 import * as React from "react";
-import { Pressable } from "react-native";
+import { Pressable, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import Box from "../atoms/box";
+
+const styles = StyleSheet.create({
+  container: { margin: 4 }
+});
 
 function HeaderRight({ onPress }: { onPress: () => void }) {
   const theme = useTheme();
@@ -10,12 +14,13 @@ function HeaderRight({ onPress }: { onPress: () => void }) {
   return (
     <Pressable onPress={onPress}>
       <Box
-        width={44}
-        height={44}
+        width={40}
+        height={40}
         alignItems="center"
         justifyContent="center"
         backgroundColor="headerButtonBackground"
-        borderRadius={8}>
+        borderRadius={8}
+        style={styles.container}>
         <Icon
           name="add-outline"
           size={25}

@@ -1,5 +1,4 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { useTheme } from "@shopify/restyle";
 import * as React from "react";
 import { Alert } from "react-native";
 import CollectionsScreen from "../screens/collections";
@@ -26,12 +25,9 @@ function handleHeaderRightPress() {
 }
 
 function Application(): JSX.Element {
-  const theme = useTheme();
-
   return (
     <Tab.Navigator
       {...getNavigatorProperties({
-        theme,
         titleValue: "Wallet 1 (dsfasdsadgdsffdsfasdre)",
         onHeaderTitlePress: handleHeaderTitlePress,
         onHeaderLeftPress: handleHeaderLeftPress,

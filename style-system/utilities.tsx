@@ -1,10 +1,9 @@
-import { BaseTheme } from "@shopify/restyle";
 import * as React from "react";
 import BottomTabBarIcon from "./atoms/bottom-tab-bar-icon";
 import Header from "./organisms/header";
+import theme from "./theme";
 
 type GetNavigatorPropertiesProps = {
-  theme: BaseTheme;
   titleValue: string;
   onHeaderTitlePress: () => void;
   onHeaderLeftPress: () => void;
@@ -17,7 +16,6 @@ type TabBarIconProps = {
 };
 
 export function getNavigatorProperties({
-  theme,
   titleValue,
   onHeaderTitlePress,
   onHeaderLeftPress,

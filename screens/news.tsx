@@ -1,19 +1,16 @@
+import { useHeaderHeight } from "@react-navigation/elements";
 import * as React from "react";
-import { StyleSheet, Text, View } from "react-native";
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
+import Text from "../style-system/atoms/text";
+import MainTemplate from "../style-system/templates/main";
 
 function News(): JSX.Element {
+  const headerHeight = useHeaderHeight();
+
   return (
-    <View style={styles.container}>
-      <Text>News</Text>
-    </View>
+    <MainTemplate
+      headerHeight={headerHeight}
+      body={<Text variant="body">News</Text>}
+    />
   );
 }
 

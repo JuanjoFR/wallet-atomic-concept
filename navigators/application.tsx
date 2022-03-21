@@ -1,5 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { useTheme } from "@shopify/restyle";
 import * as React from "react";
+import { Alert } from "react-native";
 import CollectionsScreen from "../screens/collections";
 import LiveScreen from "../screens/live";
 import NewsScreen from "../screens/news";
@@ -11,9 +13,30 @@ import {
 
 const Tab = createBottomTabNavigator();
 
+function handleHeaderTitlePress() {
+  Alert.alert("Open wallet menu");
+}
+
+function handleHeaderLeftPress() {
+  Alert.alert("Open application menu");
+}
+
+function handleHeaderRightPress() {
+  Alert.alert("Add wallet");
+}
+
 function Application(): JSX.Element {
+  const theme = useTheme();
+
   return (
-    <Tab.Navigator {...getNavigatorProperties()}>
+    <Tab.Navigator
+      {...getNavigatorProperties({
+        theme,
+        titleValue: "Wallet 1 (dsfasdsadgdsffdsfasdre)",
+        onHeaderTitlePress: handleHeaderTitlePress,
+        onHeaderLeftPress: handleHeaderLeftPress,
+        onHeaderRightPress: handleHeaderRightPress
+      })}>
       <Tab.Screen
         {...getScreenProperties({ icon: "folder" })}
         name="Tokens"

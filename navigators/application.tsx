@@ -5,10 +5,8 @@ import CollectionsScreen from "../screens/collections";
 import LiveScreen from "../screens/live";
 import NewsScreen from "../screens/news";
 import TokensScreen from "../screens/tokens";
-import {
-  getNavigatorProperties,
-  getScreenProperties
-} from "../style-system/utilities";
+import getNavigatorProperties from "../style-system/navigation/navigator-properties";
+import getScreenProperties from "../style-system/navigation/screen-properties";
 
 const Tab = createBottomTabNavigator();
 

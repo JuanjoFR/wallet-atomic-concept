@@ -1,26 +1,20 @@
 import * as React from "react";
-import BottomTabBarIcon from "./atoms/bottom-tab-bar-icon";
-import Header from "./organisms/header";
-import theme from "./theme";
+import Header from "../organisms/header";
+import theme from "../theme";
 
-type GetNavigatorPropertiesProps = {
+type Props = {
   titleValue: string;
   onHeaderTitlePress: () => void;
   onHeaderLeftPress: () => void;
   onHeaderRightPress: () => void;
 };
-type TabBarIconProps = {
-  focused: boolean;
-  color: string;
-  size: number;
-};
 
-export function getNavigatorProperties({
+function getNavigatorProperties({
   titleValue,
   onHeaderTitlePress,
   onHeaderLeftPress,
   onHeaderRightPress
-}: GetNavigatorPropertiesProps) {
+}: Props) {
   return {
     screenOptions: {
       headerTransparent: true,
@@ -43,12 +37,4 @@ export function getNavigatorProperties({
   };
 }
 
-export function getScreenProperties({ icon }: { icon: string }) {
-  return {
-    options: {
-      tabBarIcon: (props: TabBarIconProps) => (
-        <BottomTabBarIcon icon={icon} {...props} />
-      )
-    }
-  };
-}
+export default getNavigatorProperties;

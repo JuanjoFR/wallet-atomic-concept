@@ -14,7 +14,7 @@ type Props = {
   body: JSX.Element;
 };
 
-function Main({ body }: Props): JSX.Element {
+function Main({ body }: Props) {
   const headerHeight = useHeaderHeight();
 
   return (
@@ -25,11 +25,7 @@ function Main({ body }: Props): JSX.Element {
           style={{
             marginTop: headerHeight
           }}
-          // contentContainerStyle={{
-          //   paddingBottom: insets.bottom
-          // }}
-          // indicatorStyle="white"
-        >
+          indicatorStyle="white">
           {body}
         </ScrollView>
       </SafeAreaView>

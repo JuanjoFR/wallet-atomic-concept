@@ -11,8 +11,11 @@ const palette = {
   purple6: "#6F6196",
   purple7: "#6E5B97",
   purple8: "#8468EA",
+  purple9: "#39215F",
   white: "#FFF",
-  green: "#18CBA3"
+  green: "#18CBA3",
+  red: "#FF8F8F",
+  gray1: "#8E80A5"
 };
 const theme = createTheme({
   colors: {
@@ -26,8 +29,13 @@ const theme = createTheme({
     headerTitleChevron: palette.purple6,
     text: palette.white,
     text2: palette.purple7,
+    text3: palette.gray1,
     success: palette.green,
-    buttonBackground: palette.primary
+    buttonBackground: palette.primary,
+    increase: palette.green,
+    decrease: palette.red,
+    equal: palette.white,
+    listItemBackground: palette.purple9
   },
   spacing: {
     s: 8,
@@ -71,6 +79,13 @@ const theme = createTheme({
       fontSize: 16,
       lineHeight: 24,
       color: "text"
+    },
+    title: {
+      fontFamily: "System",
+      fontWeight: "700",
+      fontSize: 16,
+      lineHeight: 24,
+      color: "text3"
     }
   }
 });

@@ -3,6 +3,7 @@ import * as React from "react";
 import { Image, Pressable, StyleSheet } from "react-native";
 import Box from "../atoms/box";
 import Text from "../atoms/text";
+import { Theme } from "../theme";
 
 const styles = StyleSheet.create({
   image: { borderRadius: 50 }
@@ -16,7 +17,7 @@ type Props = {
 };
 
 function SimpleItem({ name, image, count, onPress }: Props) {
-  const theme = useTheme();
+  const theme = useTheme<Theme>();
 
   return (
     <Pressable onPress={onPress}>

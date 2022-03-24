@@ -2,6 +2,7 @@ import { useTheme } from "@shopify/restyle";
 import * as React from "react";
 import { StyleSheet, View } from "react-native";
 import Svg, { Path } from "react-native-svg";
+import { Theme } from "../theme";
 
 const styles = StyleSheet.create({
   container: {
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
 type Props = { data: number[] };
 
 function MiniLineChart({ data }: Props) {
-  const theme = useTheme();
+  const theme = useTheme<Theme>();
 
   function getColor() {
     const firstValue = data[0];

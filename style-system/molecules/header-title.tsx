@@ -4,6 +4,7 @@ import { Pressable, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import Box from "../atoms/box";
 import Text from "../atoms/text";
+import { Theme } from "../theme";
 
 const styles = StyleSheet.create({
   pressable: {
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
 type Props = { value: string; onPress: () => void };
 
 function HeaderLeft({ value, onPress }: Props) {
-  const theme = useTheme();
+  const theme = useTheme<Theme>();
 
   return (
     <Pressable

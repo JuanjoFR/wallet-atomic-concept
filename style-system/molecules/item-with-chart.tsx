@@ -4,6 +4,7 @@ import { Image, Pressable, StyleSheet } from "react-native";
 import Box from "../atoms/box";
 import MiniLineChart from "../atoms/mini-line-chart";
 import Text from "../atoms/text";
+import { Theme } from "../theme";
 
 const styles = StyleSheet.create({
   image: { borderRadius: 50 }
@@ -18,7 +19,7 @@ type Props = {
 };
 
 function ItemWithChart({ name, image, amount, historic, onPress }: Props) {
-  const theme = useTheme();
+  const theme = useTheme<Theme>();
 
   return (
     <Pressable onPress={onPress}>

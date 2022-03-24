@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Alert } from "react-native";
 import data from "../features/wallet/data.json";
-import TokensList from "../style-system/organisms/tokens-list";
+import ExtendedVerticalList from "../style-system/organisms/extended-vertical-list";
 import WalletBalance from "../style-system/organisms/wallet-balance";
 import MainTemplate from "../style-system/templates/main";
 
@@ -29,11 +29,12 @@ function Tokens() {
             onDepositPress={handleDepositPress}
             onSendPress={handleSendPress}
           />
-          <TokensList
+          <ExtendedVerticalList
+            title="My Tokens"
             data={data.tokens}
             marginHorizontal="m"
             marginBottom="l"
-            onTokenPress={handleTokenPress}
+            onItemPress={handleTokenPress}
           />
         </React.Fragment>
       }

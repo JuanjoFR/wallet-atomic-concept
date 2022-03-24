@@ -14,6 +14,7 @@ import { Theme } from "../theme";
 const restyleFunctions = composeRestyleFunctions([spacing]);
 
 type Props = SpacingProps<Theme> & {
+  title: string;
   data: {
     id: string;
     image: string;
@@ -21,23 +22,23 @@ type Props = SpacingProps<Theme> & {
     amount: number;
     historic: number[];
   }[];
-  onTokenPress: (id: string) => void;
+  onItemPress: (id: string) => void;
 };
 
-function TokensList({ data, onTokenPress, ...rest }: Props) {
+function ExtendedVerticalList({ title, data, onItemPress, ...rest }: Props) {
   const restyleProps = useRestyle(restyleFunctions, rest);
 
   return (
     <View {...restyleProps}>
       <Text variant="title" marginBottom="m">
-        My Tokens
+        {title}
       </Text>
       <Box>
-        {data.map(token => (
+        {data.map(item => (
           <ItemWithChart
-            key={token.id}
-            onPress={() => onTokenPress(token.id)}
-            {...token}
+            key={item.id}
+            onPress={() => onItemPress(item.id)}
+            {...item}
           />
         ))}
       </Box>
@@ -45,4 +46,4 @@ function TokensList({ data, onTokenPress, ...rest }: Props) {
   );
 }
 
-export default TokensList;
+export default ExtendedVerticalList;

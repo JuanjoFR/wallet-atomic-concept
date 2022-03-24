@@ -2,6 +2,7 @@ import { useTheme } from "@shopify/restyle";
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
+import { Theme } from "../theme";
 
 const styles = StyleSheet.create({
   gradient: {
@@ -14,7 +15,7 @@ type Props = {
 };
 
 function ScreenBackground({ children }: Props) {
-  const theme = useTheme();
+  const theme = useTheme<Theme>();
 
   return (
     <LinearGradient

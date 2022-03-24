@@ -24,4 +24,5 @@ The project is developed using React Native with Typescript, highlighting the fo
 [this concept from dribbble]: https://dribbble.com/shots/17580394-Solana-Wallet
 [evan place]: https://dribbble.com/evanplace
 [atomic design]: https://bradfrost.com/blog/post/atomic-web-design/
+[react navigation]: https://reactnavigation.org
 [restyle]: https://github.com/Shopify/restyle

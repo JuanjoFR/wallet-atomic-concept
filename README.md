@@ -10,7 +10,11 @@ Here you can see some videos to see the result without downloading and compiling
 
 iOS:
 
+https://user-images.githubusercontent.com/978229/159962894-cd4c4517-4594-406e-96dc-88b9b04f94d1.mov
+
 Android:
+
+https://user-images.githubusercontent.com/978229/159962931-469faa54-58df-4d82-8974-a78577d026a3.mov
 
 One of the best ways to learn and improve is by sharing knowledge, so you can use this project to study and improve. I hope you find it useful!
 

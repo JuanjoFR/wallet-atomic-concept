@@ -1,62 +1,82 @@
-[
-  {
-    "id": "1774b906-3430-40c7-8a95-28988c3b38ec",
-    "name": "Hic Odit",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/854.jpg",
-    "count": 5
-  },
-  {
-    "id": "da4e4159-d896-4b24-a957-9092d53bf86a",
-    "name": "Excepturi",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/420.jpg",
-    "count": 12
-  },
-  {
-    "id": "7b5c1c37-a673-489c-ad9b-6b1c4c64ad9d",
-    "name": "Autem Harum",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/62.jpg",
-    "count": 4
-  },
-  {
-    "id": "a6c8df69-b85f-4060-8160-be151dc40475",
-    "name": "Voluptates Similique",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/383.jpg",
-    "count": 6
-  },
-  {
-    "id": "591bd76f-1041-44ab-8f13-99c2def363ce",
-    "name": "Repellat Aut",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/774.jpg",
-    "count": 3
-  },
-  {
-    "id": "a342f616-71fb-4a68-9b9d-6f91a6513029",
-    "name": "Numquam",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/167.jpg",
-    "count": 18
-  },
-  {
-    "id": "3e3f0e20-1042-4180-b004-05188523adf6",
-    "name": "Corrupti Labore",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/939.jpg",
-    "count": 5
-  },
-  {
-    "id": "e1dca748-f8dd-4670-8c42-a0206e9076fd",
-    "name": "Quam",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/757.jpg",
-    "count": 1
-  },
-  {
-    "id": "03efa930-81aa-469e-bc39-c48bbd39cc5f",
-    "name": "Vel Laboriosam",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/839.jpg",
-    "count": 7
-  },
-  {
-    "id": "7c419a21-1ac2-4047-82b8-7576571ef1b2",
-    "name": "Ea Assumenda Qui",
-    "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/360.jpg",
-    "count": 11
-  }
-]
+{
+  "categorized": [
+    {
+      "id": "1774b906-3430-40c7-8a95-28988c3b38ec",
+      "name": "Hic Odit",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/854.jpg",
+      "count": 5
+    },
+    {
+      "id": "da4e4159-d896-4b24-a957-9092d53bf86a",
+      "name": "Excepturi",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/420.jpg",
+      "count": 12
+    },
+    {
+      "id": "7b5c1c37-a673-489c-ad9b-6b1c4c64ad9d",
+      "name": "Autem Harum",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/62.jpg",
+      "count": 4
+    },
+    {
+      "id": "a6c8df69-b85f-4060-8160-be151dc40475",
+      "name": "Voluptates Similique",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/383.jpg",
+      "count": 6
+    },
+    {
+      "id": "591bd76f-1041-44ab-8f13-99c2def363ce",
+      "name": "Repellat Aut",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/774.jpg",
+      "count": 3
+    },
+    {
+      "id": "a342f616-71fb-4a68-9b9d-6f91a6513029",
+      "name": "Numquam",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/167.jpg",
+      "count": 18
+    },
+    {
+      "id": "3e3f0e20-1042-4180-b004-05188523adf6",
+      "name": "Corrupti Labore",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/939.jpg",
+      "count": 5
+    },
+    {
+      "id": "e1dca748-f8dd-4670-8c42-a0206e9076fd",
+      "name": "Quam",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/757.jpg",
+      "count": 1
+    },
+    {
+      "id": "03efa930-81aa-469e-bc39-c48bbd39cc5f",
+      "name": "Vel Laboriosam",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/839.jpg",
+      "count": 7
+    },
+    {
+      "id": "7c419a21-1ac2-4047-82b8-7576571ef1b2",
+      "name": "Ea Assumenda Qui",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/360.jpg",
+      "count": 11
+    }
+  ],
+  "uncategorized": [
+    {
+      "id": "9d70fbb7-4060-4a99-8f02-8a78024707e2",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/950.jpg"
+    },
+    {
+      "id": "f372b790-e9f8-4ebf-b83a-07c5937e3f3e",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/738.jpg"
+    },
+    {
+      "id": "19809215-5b1c-47c3-b6b7-bc827595dfb8",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/696.jpg"
+    },
+    {
+      "id": "844b7ea5-1d68-4115-9f96-a5b12605a1fc",
+      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/113.jpg"
+    }
+  ]
+}

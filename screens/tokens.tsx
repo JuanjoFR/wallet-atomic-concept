@@ -32,6 +32,7 @@ function Tokens() {
           <TokensList
             data={data.tokens}
             marginHorizontal="m"
+            marginBottom="l"
             onTokenPress={handleTokenPress}
           />
         </React.Fragment>

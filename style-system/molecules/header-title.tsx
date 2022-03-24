@@ -23,30 +23,33 @@ function HeaderLeft({ value, onPress }: Props) {
     <Pressable
       onPress={onPress}
       style={[styles.pressable, { marginHorizontal: theme.spacing.m }]}>
-      <Box
-        flex={1}
-        height={40}
-        paddingHorizontal="s"
-        borderColor="headerButtonBackground"
-        borderWidth={2}
-        borderRadius={8}
-        flexDirection="row"
-        alignItems="center"
-        justifyContent="space-between"
-        style={styles.container}>
-        <Text
-          numberOfLines={1}
-          variant="body"
-          marginRight="s"
-          style={styles.text}>
-          {value}
-        </Text>
-        <Icon
-          name="chevron-down-outline"
-          size={20}
-          color={theme.colors.headerTitleChevron}
-        />
-      </Box>
+      {({ pressed }) => (
+        <Box
+          flex={1}
+          height={40}
+          paddingHorizontal="s"
+          borderColor="headerButtonBackground"
+          borderWidth={2}
+          borderRadius={8}
+          flexDirection="row"
+          alignItems="center"
+          justifyContent="space-between"
+          backgroundColor={pressed ? "headerButtonBackground" : undefined}
+          style={styles.container}>
+          <Text
+            numberOfLines={1}
+            variant="body"
+            marginRight="s"
+            style={styles.text}>
+            {value}
+          </Text>
+          <Icon
+            name="chevron-down-outline"
+            size={20}
+            color={theme.colors.headerTitleChevron}
+          />
+        </Box>
+      )}
     </Pressable>
   );
 }

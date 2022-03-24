@@ -21,34 +21,38 @@ function SimpleItem({ name, image, count, onPress }: Props) {
 
   return (
     <Pressable onPress={onPress}>
-      <Box
-        flexDirection="row"
-        alignItems="center"
-        padding="s"
-        marginBottom="s"
-        borderRadius={8}
-        backgroundColor="listItemBackground">
-        <Image
-          source={[
-            {
-              uri: image,
-              width: 48,
-              height: 48
-            }
-          ]}
-          width={48}
-          height={48}
-          style={[styles.image, { marginRight: theme.spacing.m }]}
-        />
-        <Box flex={1}>
-          <Text variant="body" marginRight="m" numberOfLines={1}>
-            {name}
+      {({ pressed }) => (
+        <Box
+          flexDirection="row"
+          alignItems="center"
+          padding="s"
+          marginBottom="s"
+          borderRadius={8}
+          backgroundColor={
+            pressed ? "listItemActiveBackground" : "listItemInactiveBackground"
+          }>
+          <Image
+            source={[
+              {
+                uri: image,
+                width: 48,
+                height: 48
+              }
+            ]}
+            width={48}
+            height={48}
+            style={[styles.image, { marginRight: theme.spacing.m }]}
+          />
+          <Box flex={1}>
+            <Text variant="body" marginRight="m" numberOfLines={1}>
+              {name}
+            </Text>
+          </Box>
+          <Text variant="body" marginRight="s">
+            {count.toString()}
           </Text>
         </Box>
-        <Text variant="body" marginRight="s">
-          {count.toString()}
-        </Text>
-      </Box>
+      )}
     </Pressable>
   );
 }

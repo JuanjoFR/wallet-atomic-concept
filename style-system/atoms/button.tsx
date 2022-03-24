@@ -25,16 +25,20 @@ function Button({ text, onPress, ...rest }: Props) {
   return (
     <Box flex={1} {...props}>
       <Pressable style={styles.pressable} onPress={onPress}>
-        <Box
-          flex={1}
-          height={44}
-          paddingHorizontal="m"
-          alignItems="center"
-          justifyContent="center"
-          backgroundColor="buttonBackground"
-          borderRadius={8}>
-          <Text variant="button">{text}</Text>
-        </Box>
+        {({ pressed }) => (
+          <Box
+            flex={1}
+            height={44}
+            paddingHorizontal="m"
+            alignItems="center"
+            justifyContent="center"
+            backgroundColor={
+              pressed ? "buttonActiveBackground" : "buttonInactiveBackground"
+            }
+            borderRadius={8}>
+            <Text variant="button">{text}</Text>
+          </Box>
+        )}
       </Pressable>
     </Box>
   );

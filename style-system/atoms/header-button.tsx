@@ -19,20 +19,23 @@ function HeaderButton({ icon, onPress, ...rest }: Props) {
 
   return (
     <Pressable onPress={onPress}>
-      <Box
-        width={40}
-        height={40}
-        alignItems="center"
-        justifyContent="center"
-        borderRadius={8}
-        style={styles.container}
-        {...rest}>
-        <Icon
-          name={`${icon}-outline`}
-          size={25}
-          color={theme.colors.headerButtonForeground}
-        />
-      </Box>
+      {({ pressed }) => (
+        <Box
+          width={40}
+          height={40}
+          alignItems="center"
+          justifyContent="center"
+          borderRadius={8}
+          opacity={pressed ? 0.5 : 1}
+          style={styles.container}
+          {...rest}>
+          <Icon
+            name={`${icon}-outline`}
+            size={25}
+            color={theme.colors.headerButtonForeground}
+          />
+        </Box>
+      )}
     </Pressable>
   );
 }

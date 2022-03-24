@@ -15,7 +15,9 @@ const palette = {
   white: "#FFF",
   green: "#18CBA3",
   red: "#FF8F8F",
-  gray1: "#8E80A5"
+  gray1: "#8E80A5",
+  primaryActive: "#8079FE",
+  purple9Active: "#48215F"
 };
 const theme = createTheme({
   colors: {
@@ -31,11 +33,13 @@ const theme = createTheme({
     text2: palette.purple7,
     text3: palette.gray1,
     success: palette.green,
-    buttonBackground: palette.primary,
+    buttonInactiveBackground: palette.primary,
+    buttonActiveBackground: palette.primaryActive,
     increase: palette.green,
     decrease: palette.red,
     equal: palette.white,
-    listItemBackground: palette.purple9
+    listItemActiveBackground: palette.purple9Active,
+    listItemInactiveBackground: palette.purple9
   },
   spacing: {
     s: 8,

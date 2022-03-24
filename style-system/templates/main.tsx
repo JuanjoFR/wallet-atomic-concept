@@ -7,7 +7,8 @@ import ScreenBackground from "../atoms/screen-background";
 const styles = StyleSheet.create({
   container: {
     flex: 1
-  }
+  },
+  contentContainer: { flexGrow: 1 }
 });
 
 type Props = {
@@ -25,6 +26,7 @@ function Main({ body }: Props) {
           style={{
             marginTop: headerHeight
           }}
+          contentContainerStyle={styles.contentContainer}
           indicatorStyle="white">
           {body}
         </ScrollView>

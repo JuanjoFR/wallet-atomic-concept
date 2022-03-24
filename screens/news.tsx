@@ -1,9 +1,9 @@
 import * as React from "react";
-import Text from "../style-system/atoms/text";
+import EmptyContent from "../style-system/molecules/empty-content";
 import MainTemplate from "../style-system/templates/main";
 
-function News(): JSX.Element {
-  return <MainTemplate body={<Text variant="body">News</Text>} />;
+function News() {
+  return <MainTemplate body={<EmptyContent text="Empty Screen" />} />;
 }
 
 export default News;
